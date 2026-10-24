@@ -1,0 +1,52 @@
+
+# Compiled Java files
+*.class
+
+# Build output
+target/
+build/
+out/
+
+# Gradle
+.gradle/
+
+# Maven wrapper - keep these files tracked
+# mvnw
+# mvnw.cmd
+# .mvn/wrapper/
+
+# IDE files - IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+application-local.properties
+application-local.yml
+application-dev.properties
+application-dev.yml
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+
+# Spring Boot generated files
+spring-boot-devtools.properties
