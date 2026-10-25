@@ -12,7 +12,7 @@ public class UpdateDtlsConstants {
 	public static final String NAME ="name";
 	public static final String AGE = "age";
 	public static final String SALARY = "salary";
-	public static final String FLAGS = "flags";
+	public static final String TYPES = "types";
 	public static final String PER_PROF = "perProf";
 	public static final String ADD = "add";
 	public static final String DTLS = "dtls";

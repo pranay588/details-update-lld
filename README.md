@@ -80,15 +80,15 @@ curl --location 'http://localhost:8083/dtls/update' \
 --data '{
     "leadId":"1",
     "userDtlsReq":{
-        "flags":["add","perProf"],
+        "types":["add","perProf"],
         "dtls":{
-            "addOne":"new address line one",
-            "addTwo":"new address line two",
-            "addThree":"new address line three",
-            "occupation":"SDE 2",
+            "addOne":"main line one",
+            "addTwo":"main line two",
+            "addThree":"main line three",
+            "occupation":"SDE 3",
 	        "name":"Sr.DEV",
-	        "age":25,
-	        "salary":300000
+	        "age":26,
+	        "salary":500000
         }
     }
 }'

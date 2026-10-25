@@ -29,21 +29,21 @@ public class UpdateDtlsSvc {
 		this.updateDtlsAsync=updateDtlsAsync;
 	}
 	public ResponseEntity<String> userDetails(String leadId,HashMap<String,Object> userReq){
-			List<String> flags;
+			List<String> types;
 			List<UpdateDtlsStrategy> updatingList = new ArrayList<>();
-			if(userReq.get(UpdateDtlsConstants.FLAGS) instanceof List) {
-				flags = (List<String>) userReq.get(UpdateDtlsConstants.FLAGS);
-				if(flags.contains(UpdateDtlsConstants.ADD) && flags.contains(UpdateDtlsConstants.PER_PROF)) {
+			if(userReq.get(UpdateDtlsConstants.TYPES) instanceof List) {
+				types = (List<String>) userReq.get(UpdateDtlsConstants.TYPES);
+				if(types.contains(UpdateDtlsConstants.ADD) && types.contains(UpdateDtlsConstants.PER_PROF)) {
 					updatingList.add(permAddUpdate);
 					updatingList.add(tempAddUpdate);
 					updatingList.add(profDtlsUpdate);
 					updatingList.add(prsnlDtlsUpdate);
 				}
-				else if(flags.contains(UpdateDtlsConstants.ADD)) {
+				else if(types.contains(UpdateDtlsConstants.ADD)) {
 					updatingList.add(permAddUpdate);
 					updatingList.add(tempAddUpdate);
 				}
-				else if(flags.contains(UpdateDtlsConstants.PER_PROF)) {
+				else if(types.contains(UpdateDtlsConstants.PER_PROF)) {
 					updatingList.add(profDtlsUpdate);
 					updatingList.add(prsnlDtlsUpdate);
 				}
